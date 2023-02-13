@@ -1,0 +1,39 @@
+{
+  "name": "random-liner-gradient",
+  "version": "0.0.1",
+  "private": false,
+  "description": "random gradient color",
+  "main": "lib/index.umd.js",
+  "module": "lib/index.mjs",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LOG1997/create-vue3-vite-template.git"
+  },
+  "homepage": "https://github.com/LOG1997/create-vue3-vite-template#readme",
+  "scripts": {
+    "test": "ts-node package/test.ts",
+    "start": "ts-node package/index.ts",
+    "prepublish": "npm run build",
+    "build": "vite build"
+  },
+  "files": [
+    "/lib",
+    "README.md"
+  ],
+  "keywords": [
+    "vue",
+    "react",
+    "vite"
+  ],
+  "author": "log997",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.0.0",
+    "path": "^0.12.7",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.1"
+  }
+}
