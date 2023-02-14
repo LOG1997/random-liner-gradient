@@ -2,6 +2,7 @@
 import path from 'path';
 import { defineConfig } from 'vite';
 import typescript from '@rollup/plugin-typescript';
+import viteCompression from 'vite-plugin-compression';
 function resolve(str: string) {
     return path.resolve(__dirname, str);
 }
@@ -16,6 +17,13 @@ export default defineConfig({
             exclude: resolve('node_modules/**'),
             allowSyntheticDefaultImports: true,
         }),
+        viteCompression({
+            verbose: true,
+            disable: false,
+            threshold: 10240,
+            algorithm: 'gzip',
+            ext: '.gz',
+        })
     ],
     build: {
         // 打包输出的目录

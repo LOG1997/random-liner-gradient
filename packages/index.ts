@@ -9,8 +9,9 @@ import { rotateHsv, randomColor } from './utils/option';
  */
 export const getRandomGradientColor = (hexColor: string = '', deg: number = -361, Colorangle: number = 30) => {
     deg = deg < -360 ? Math.floor(Math.random() * 360) : deg;
+    Colorangle = Colorangle < -360 ? Math.floor(Math.random() * 360) : Colorangle;
     const color1 = hexColor ? hexColor : randomColor();
     const color2 = rotateHsv(color1, Colorangle);
-    return `linear-gradient(${deg}deg, ${color1} 0%, ${color2} 100%)`;
+    return `linear-gradient(${deg}deg, ${color1}, ${color2})`;
 }
 
