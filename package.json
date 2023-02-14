@@ -1,6 +1,6 @@
 {
   "name": "random-liner-gradient",
-  "version": "0.0.2-Alpha",
+  "version": "0.0.2-alpha.0",
   "private": false,
   "description": "random gradient color",
   "main": "lib/index.umd.js",

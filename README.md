@@ -1,8 +1,6 @@
 
 <div style="text-align:center;align:center">
-<!-- <div style="width:100px;height:100px;background-image: linear-gradient(to top right, #ff0844 50%, #ffb199 50%);filter:blur(30px);margin:0 auto">
 
-</div>    -->
  <img style="z-index:10;position:abslute;margin-top:10px" src="https://s1.ax1x.com/2023/02/14/pSo7CWt.png" />
 
 </div>
@@ -22,14 +20,20 @@
 </a>
 </p>
 <br/>
+
+
 # 生成随机渐变
 ## 生成随机色的方式
 传入一种颜色或者自动生成一个随机色后，渐变色的另一个颜色默认取值是在色环上顺时针偏向30°的颜色，此种颜色过渡平缓，优点是稳定、和谐，没有强烈的视觉冲击，是最安全的配色。
 <img src="https://s1.ax1x.com/2023/02/14/pSo4I3T.png" alt="颜色"></img>
+
+
 ## 安装
 ```bash
 npm i random-liner-gradient
 ```
+
+
 ## 使用
 ```ts
 import {getRandomGradientColor} from 'random-liner-gradient';
